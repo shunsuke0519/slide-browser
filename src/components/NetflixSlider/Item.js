@@ -4,6 +4,10 @@ import SliderContext from './context'
 import ShowDetailsButton from './ShowDetailsButton'
 import Mark from './Mark'
 import './Item.scss'
+import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
+import Button from 'react-bootstrap/Button';
+import Likebutton from './Likebutton';
+
 
 const Item = ({ movie }) => (
   <SliderContext.Consumer>
@@ -22,7 +26,12 @@ const Item = ({ movie }) => (
           {isActive && <Mark />}
           {/* to add text */}
           {movie.title}
-        </div>
+          <br></br>
+          {movie.title1}
+          <br></br>
+          {movie.title2}
+          <Likebutton />
+         </div>
       );
     }}
   </SliderContext.Consumer>

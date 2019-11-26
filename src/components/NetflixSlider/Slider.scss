@@ -16,7 +16,7 @@
   }
 
   &:not(&--open) .item:hover {
-    transform: scale(1.5) !important;
+    transform: scale(1.5) translate3d(0px, 0px, 0px) !important;
   }
 
   &:not(&--open):hover .item {
